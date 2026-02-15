@@ -1,74 +1,53 @@
-# TrendMesh AI
+# TrendMesh AI  
 
-## 🚀 AI-Powered Trend Discovery & Content Optimization Engine
-
-### 📌 Problem
-
-Content creators struggle to:
-- Identify relevant trending topics
-- Understand which trends suit their niche
-- Know what hook or script to use
-- Decide best time to post
-- Optimize hashtags
-
-Existing tools are fragmented and do not provide an AI-driven end-to-end solution.
+**An AI-powered content discovery and generation platform for creators**  
 
 ---
 
-### 💡 Solution
+## Project Overview  
 
-TrendMesh AI is an intelligent system that:
-
-1. Fetches trending topics from multiple platforms
-2. Filters trends based on user niche
-3. Scores trends using engagement and relevance metrics
-4. Generates:
-   - High-converting hook
-   - Short-form script
-   - Optimized hashtags
-   - Best posting time
-
-All in one unified AI-powered workflow.
+TrendMesh AI helps content creators, influencers, and digital marketers **discover trending topics** across multiple social media platforms and generate **optimized content automatically**. The system uses **AI, NLP, and multi-factor scoring** to identify high-potential trends and produce hooks, scripts, hashtags, and best posting times for maximum engagement.  
 
 ---
 
-### 🧠 How It Works
+## Key Features  
 
-User Input (Niche / Platform)
-        ↓
-Trend Fetching Engine
-        ↓
-Relevance Filtering
-        ↓
-Trend Scoring
-        ↓
-AI Content Generator
-        ↓
-Optimized Content Output
+- **Multi-platform trend aggregation**: Fetch trending topics from Twitter/X, TikTok, Instagram, Reddit, and YouTube.  
+- **Niche-based filtering**: NLP-powered filtering for trends relevant to user-selected niches.  
+- **Trend scoring & ranking**: Evaluate trends by engagement potential, relevance, recency, and competition.  
+- **AI content generation**: Generate hooks, short-form scripts, hashtags, and optimal posting times.  
+- **Data persistence**: Save user preferences and generated content for future reference.  
+- **Resilience & error handling**: Handles API failures and rate limits gracefully.  
 
 ---
 
-### ⚙️ Planned Tech Stack
+## System Architecture  
 
-- Frontend: React (Web Dashboard)
-- Backend: Python (FastAPI)
-- AI: LLM-based content generation
-- Data Sources: Platform APIs + Google Trends
+TrendMesh AI uses a **modular pipeline architecture**:
 
----
+1. **Trend Aggregator** → Fetch trends from multiple platforms.  
+2. **Normalizer & NLP Filter** → Standardize data & filter by niche relevance.  
+3. **Trend Scorer & Ranker** → Score trends and rank by virality.  
+4. **Content Generator** → Generate AI-powered hooks, scripts, hashtags, and posting times.  
+5. **Persistence Layer** → Store trends, user niches, and generated content.  
 
-### 🌍 Impact
-
-- Saves creators time
-- Increases engagement
-- Improves content quality
-- Democratizes data-driven content strategy
+*(Detailed design available in `design.md`)*  
 
 ---
 
-### 🔮 Future Scope
+## Tech Stack  
 
-- Trend prediction
-- Regional language support
-- Competitor analysis
-- Automated scheduling
+- **AI/NLP**: GPT-4 or similar, sentence embeddings for semantic analysis  
+- **Backend**: Python / Node.js (for APIs and processing)  
+- **Database**: PostgreSQL / MongoDB (for persistence)  
+- **Frontend**: React / Vue.js (optional for UI)  
+- **Platform APIs**: Twitter/X, TikTok, Instagram, Reddit, YouTube  
+
+---
+
+## Getting Started  
+
+1. Clone the repository:  
+
+```bash
+git clone https://github.com/yourusername/trendmesh-ai.git
